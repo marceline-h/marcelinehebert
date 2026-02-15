@@ -28,7 +28,7 @@ h2, h3, h4, main, .menu, .left-buttons, .center-right, .bottom-left, .bottom-rig
 h2 {
   font-size: 16px;
   font-weight: normal;  /* pas en gras */
-  margin-left: -20px;   /* anti-retrait esthétique */
+  margin-left: -80px;   /* anti-retrait esthétique */
 }
 
 h3 {
@@ -189,6 +189,7 @@ main {
   display: block;
   margin: 0 auto;
 }
+
 
 
 

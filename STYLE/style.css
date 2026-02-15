@@ -25,7 +25,6 @@ h2, h3, h4, main, .menu, .left-buttons, .center-right, .bottom-left, .bottom-rig
   margin: 0;
   padding: 0;
 }
-}
 
 h2 {
   font-size: 16px;
@@ -193,16 +192,5 @@ main {
   margin: 0 auto;
 }
 
-/* Bouton de fermeture */
-/* .lightbox-close {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  font-size: 25px;
-  font-weight: bold;
-  cursor: pointer;
-  color: #333;
-
-} */
 
 

@@ -290,22 +290,29 @@ main {
 
   
 /* ========================= */
-/* 📱 About page mobile footer */
+/* 📱 About page : désactiver le responsive */
 /* ========================= */
 @media (max-width: 768px) {
 
-  /* Footer "website developed with ihsane takoui" descend sur mobile */
-  .about-page .bottom-right {
-    position: relative;   /* sort de l'absolu */
-    bottom: auto;
-    right: auto;
-    text-align: left;
-    margin-top: 20px;
-    font-size: 14px;
+  /* Tout reste comme sur desktop */
+  .about-page * {
+    position: unset !important;      /* enlève toutes les positions absolues/fixed sur mobile */
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    transform: none !important;
   }
 
+  /* Footer "website developed with ihsane takoui" reste lisible */
+  .about-page .bottom-right {
+    position: absolute;   /* garde le style desktop */
+    bottom: 10px;
+    right: 10px;
+  }
 
 }
+
 
 
 

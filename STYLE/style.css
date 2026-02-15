@@ -13,37 +13,39 @@ body, .gallery {
 body {
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: white;
-  /* retirer flex pour que les titres puissent sortir légèrement */
 }
 
-/* titres et éléments généraux */
+/* titres */
 h2, h3, h4, main, .menu, .left-buttons, .center-right, .bottom-left, .bottom-right {
   font-family: 'texgyrheros';
   margin: 0;
   padding: 0;
 }
 
-/* titres */
 h2 {
   font-size: 16px;
-  font-weight: normal;  /* pas en gras */
-  margin-left: -80px;   /* anti-retrait esthétique */
+  margin-left: -30px;
+  font-weight: normal;
 }
 
 h3 {
   font-size: 16px;
+  margin-left: -60px;
   font-weight: normal;
-  margin-left: -40px;
-  line-height: 1;
+  line-height: 0;
 }
 
 h4 {
   font-size: 16px;
+  margin-left: -30px;
   font-weight: normal;
-  margin-left: -10px;
-  line-height: 1.2;
+  line-height: 0.2;
 }
+
 /* menu principal */
 .menu {
   position: absolute;
@@ -189,8 +191,4 @@ main {
   display: block;
   margin: 0 auto;
 }
-
-
-
-
 

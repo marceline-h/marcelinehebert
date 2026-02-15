@@ -1,54 +1,56 @@
+/* police */
 @font-face {
-  font-family:'texgyrheros';
-  src: url('/FONT/texgyreheros-regular.otf') format('opentype');
+  font-family: 'texgyrheros';
+  src: url('../FONT/texgyreheros-regular.otf') format('opentype');
 }
 
+/* curseur */
 body, .gallery {
-  cursor: default; /* curseur normal par défaut sur la page et la galerie */
+  cursor: default;
 }
 
+/* body */
 body {
   margin: 0;
-  background: white;
-   margin: 0;
   padding: 0;
   display: flex;
   justify-content: center;
-  align-items: center;  
-  
+  align-items: center;
+  background: white;
+}
+
+/* titres */
+h2, h3, h4, main, .menu, .left-buttons, .center-right, .bottom-left, .bottom-right {
+  font-family: 'texgyrheros';
 }
 
 h2 {
-  font-family: 'texgyrheros';
-  font-size: 16px;       /* même taille que le reste si besoin */
-  margin-left: -50px;    /* commence un peu plus tôt */
-  font-weight: normal; 
+  font-size: 16px;
+  margin-left: -50px;
+  font-weight: normal;
 }
 
- h3 {
-  font-family: 'texgyrheros';
-  font-size: 16px;       /* même taille que le reste si besoin */
-  margin-left: -60px;    /* commence un peu plus tôt */
-  font-weight: normal; 
+h3 {
+  font-size: 16px;
+  margin-left: -60px;
+  font-weight: normal;
   line-height: 0;
 }
 
- h4 {
-  font-family: 'texgyrheros';
-  font-size: 16px;       /* même taille que le reste si besoin */
-  margin-left: -30px;    /* commence un peu plus tôt */
+h4 {
+  font-size: 16px;
+  margin-left: -30px;
   font-weight: normal;
   line-height: 0.2;
 }
 
+/* menu principal */
 .menu {
-  font-family: 'texgyrheros';
   position: absolute;
-  top: 50%;    
-  left: 10%;  
+  top: 50%;
+  left: 10%;
   display: flex;
   gap: 40px;
-
 }
 
 .menu a {
@@ -61,8 +63,8 @@ h2 {
   opacity: 0.6;
 }
 
+/* boutons de gauche */
 .left-buttons {
-  font-family: 'texgyrheros';
   position: fixed;
   left: 2vw;
   top: 48vh;
@@ -78,33 +80,30 @@ h2 {
   color: black;
   font-size: 18px;
   transition: opacity 0.2s;
-  
 }
-
 
 .left-buttons a:hover {
   opacity: 0.6;
 }
 
+/* texte principal */
 main {
-  font-family: 'texgyrheros';
-  align-items: center;
-  justify-content: center;
-  max-width: 600px; 
+  max-width: 600px;
   text-align: left;
   line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-
+/* centre droit */
 .center-right {
-  text-decoration: none;
-  font-family: 'texgyrheros';
   position: absolute;
-  right: 1% ;
+  right: 1%;
   top: 40vh;
   text-align: right;
   line-height: 1.5;
-  
 }
 
 .center-right a {
@@ -113,33 +112,29 @@ main {
   transition: opacity 0.2s;
 }
 
-
 .center-right a:hover {
   opacity: 0.6;
- 
 }
 
+/* bas gauche et droit */
 .bottom-left {
-  font-family: 'texgyrheros';
   position: absolute;
   bottom: 10px;
   left: 10px;
   font-size: 15px;
 }
 
-
 .bottom-right {
-  font-family: 'texgyrheros';
   position: absolute;
   bottom: 10px;
   right: 10px;
 }
 
+/* galerie */
 .gallery {
   position: relative;
   width: 100vw;
   height: 100vh;
-  
 }
 
 .gallery :hover {
@@ -151,6 +146,7 @@ main {
   position: absolute;
 }
 
+/* lightbox */
 .lightbox {
   display: none;
   position: fixed;
@@ -165,19 +161,18 @@ main {
   cursor: pointer;
 }
 
-
 .lightbox-content {
   position: relative;
-  max-width: 98%; 
-  max-height: 90%; 
-  text-align:left;
+  max-width: 98%;
+  max-height: 90%;
+  text-align: left;
   cursor: default;
 }
 
 .lightbox-content img {
-  max-width: 90vw;    
-  max-height: 90vh;   
-  width: auto;         
+  max-width: 90vw;
+  max-height: 90vh;
+  width: auto;
   height: auto;
   display: block;
   margin: 0 auto;
@@ -185,14 +180,14 @@ main {
 
 .lightbox-content .caption {
   margin-top: 5px;
-  font-family: 'texgyrheros';
   font-size: 15px;
   color: #333;
 }
 
+/* images centrées dans writings/poems */
 .centered-image {
-    display: block;
-    margin: 0 auto;
+  display: block;
+  margin: 0 auto;
 }
 
 /* Bouton de fermeture */
@@ -204,4 +199,5 @@ main {
   font-weight: bold;
   cursor: pointer;
   color: #333;
+
 } */

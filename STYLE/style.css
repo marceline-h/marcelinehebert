@@ -212,6 +212,17 @@ main {
     padding: 20px;
   }
 
+  main {
+    max-width: 90%;
+    margin: 0 auto;
+    padding-left: 10px;
+  }
+
+  h2 {
+    margin-left: -10px;
+  }
+
+
   /* Navigation devient horizontale en haut */
   .left-buttons {
     position: relative;
@@ -262,6 +273,7 @@ main {
   }
 
 }
+
 
 
 

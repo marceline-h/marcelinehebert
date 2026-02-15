@@ -201,9 +201,11 @@ main {
     margin: 0 auto;
 }
 
+
 /* ========================= */
 /* 📱 VERSION MOBILE */
 /* ========================= */
+
 
 @media (max-width: 768px) {
 
@@ -212,18 +214,30 @@ main {
     padding: 20px;
   }
 
+  /* Bloc principal centré et largeur adaptée */
   main {
     max-width: 90%;
     margin: 0 auto;
     padding-left: 10px;
+    font-size: 0.9rem; /* texte un peu plus petit */
   }
 
   h2 {
-    margin-left: -10px;
+    margin-left: -10px;  /* réduit le retrait */
+    font-size: 1.2rem;   /* titre un peu plus petit */
   }
 
+  h3 {
+    font-size: 1.1rem;
+    margin-left: -5px;
+  }
 
-  /* Navigation devient horizontale en haut */
+  h4 {
+    font-size: 1rem;
+    margin-left: 0;
+  }
+
+  /* Navigation devient horizontale */
   .left-buttons {
     position: relative;
     top: auto;
@@ -239,13 +253,14 @@ main {
     font-size: 16px;
   }
 
-  /* Texte principal */
+  /* Texte à droite devient centré/vertical */
   .center-right {
     position: relative;
     top: auto;
     right: auto;
     text-align: left;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
+    font-size: 0.9rem; /* réduit le texte */
   }
 
   /* Footer */
@@ -260,19 +275,21 @@ main {
     font-size: 14px;
   }
 
-  /* Galerie */
+  /* Galerie et images plus grandes */
   .gallery {
     height: auto;
+    margin-bottom: 20px;
   }
 
   .img {
     position: relative;
-    width: 100%;
+    width: 100%;       /* images prennent toute la largeur du conteneur */
     height: auto;
     margin-bottom: 20px;
   }
 
 }
+
 
 
 

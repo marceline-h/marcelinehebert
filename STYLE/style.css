@@ -288,7 +288,25 @@ main {
     margin-bottom: 20px;
   }
 
+  
+/* ========================= */
+/* 📱 About page mobile footer */
+/* ========================= */
+@media (max-width: 768px) {
+
+  /* Footer "website developed with ihsane takoui" descend sur mobile */
+  .about-page .bottom-right {
+    position: relative;   /* sort de l'absolu */
+    bottom: auto;
+    right: auto;
+    text-align: left;
+    margin-top: 20px;
+    font-size: 14px;
+  }
+
+
 }
+
 
 
 

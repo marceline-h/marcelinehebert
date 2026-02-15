@@ -22,6 +22,9 @@ body {
 /* titres */
 h2, h3, h4, main, .menu, .left-buttons, .center-right, .bottom-left, .bottom-right {
   font-family: 'texgyrheros';
+  margin: 0;
+  padding: 0;
+}
 }
 
 h2 {
@@ -201,4 +204,5 @@ main {
   color: #333;
 
 } */
+
 

@@ -289,14 +289,35 @@ main {
     height: auto;
   }
 
-  .img {
-    position: relative;   /* enlève l’absolu */
-    width: 95vw;          /* presque toute la largeur écran */
+  .gallery {
     height: auto;
-    margin: 20px auto;
+    padding-top: 20px;
+  }
+
+  .img {
+    position: relative;
+    width: 94vw;
+    height: auto;
+    margin: 40px auto;
+  }
+
+  /* 1 image sur 3 un peu plus petite */
+  .img:nth-child(3n) {
+    width: 80vw;
+  }
+
+  /* 1 image sur 4 légèrement décalée à gauche */
+  .img:nth-child(4n) {
+    margin-left: 5vw;
+  }
+
+  /* 1 image sur 5 légèrement décalée à droite */
+  .img:nth-child(5n) {
+    margin-right: 5vw;
   }
 
 }
+
 
 
 

@@ -285,8 +285,11 @@ body {
 }
 
 .img {
-  height: auto; /* garde le ratio, positions et largeur gérées par script.js */
+  position: absolute; /* positions gérées par JS */
+  width: auto;        /* laisse JS appliquer data-width */
+  height: auto;       /* garde le ratio */
 }
+
 
 
 

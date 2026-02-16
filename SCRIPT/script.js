@@ -31,24 +31,17 @@ lightbox.addEventListener('click', (e) => {
   }
 });
 
-document.querySelectorAll('.img').forEach(img => {
-  img.style.top = img.dataset.top;
-  img.style.left = img.dataset.left;
-  img.style.width = img.dataset.width;
-});
-
-  // ===============================
-  // Desktop uniquement : positions absolues
-  // ===============================
+function applyImagePositions() {
   if (window.innerWidth > 768) {
+    // Desktop : positions absolues selon data-*
     images.forEach(img => {
+      img.style.position = 'absolute';
       img.style.top = img.dataset.top;
       img.style.left = img.dataset.left;
       img.style.width = img.dataset.width;
-      img.style.position = 'absolute';   // seulement desktop
     });
   } else {
-    // Sur mobile, laisse tout au CSS (scroll vertical, largeurs, marges, etc.)
+    // Mobile : styles CSS seuls
     images.forEach(img => {
       img.style.position = 'relative';
       img.style.top = 'auto';
@@ -56,6 +49,7 @@ document.querySelectorAll('.img').forEach(img => {
       img.style.width = 'auto';
     });
   }
+}
 
 // Remettre le curseur normal après avoir quitté une image
 document.querySelectorAll('.img').forEach(img => {
@@ -68,5 +62,6 @@ document.querySelectorAll('.img').forEach(img => {
   });
 
 });
+
 
 

@@ -31,13 +31,11 @@ lightbox.addEventListener('click', (e) => {
   }
 });
 
-// Ne placer les images qu'en desktop
-if (window.innerWidth > 768) {
-  document.querySelectorAll('.img').forEach(img => {
-    img.style.top = img.dataset.top;
-    img.style.left = img.dataset.left;
-    img.style.width = img.dataset.width;
-  });
+document.querySelectorAll('.img').forEach(img => {
+  img.style.top = img.dataset.top;
+  img.style.left = img.dataset.left;
+  img.style.width = img.dataset.width;
+});
 
 // Remettre le curseur normal après avoir quitté une image
 document.querySelectorAll('.img').forEach(img => {
@@ -50,3 +48,4 @@ document.querySelectorAll('.img').forEach(img => {
   });
 
 });
+

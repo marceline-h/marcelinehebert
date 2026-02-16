@@ -275,7 +275,7 @@ body {
   margin: 0;
   padding: 0;
   background: white;
-  display: block; /* pas de flex centré sur desktop */
+  display: block;
 }
 
 .gallery {
@@ -285,12 +285,10 @@ body {
 }
 
 .img {
-  position: absolute; /* positions gérées par JS */
-  width: auto;        /* laisse JS appliquer data-width */
-  height: auto;       /* garde le ratio */
+  position: absolute; /* positions fixes du HTML */
+  width: auto;        /* laisse les data-width du HTML */
+  height: auto;
 }
-
-
 
 
 

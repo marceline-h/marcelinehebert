@@ -1,3 +1,4 @@
+
 // Sélectionner toutes les images de la galerie
 const images = document.querySelectorAll('.gallery img');
 const lightbox = document.getElementById('lightbox');
@@ -10,7 +11,7 @@ images.forEach(img => {
     lightbox.style.display = 'flex';
     lightboxImg.src = img.src;
 
-     // Si l'image a un data-link, afficher le lien lui-même
+    // Si l'image a un data-link, afficher le lien lui-même
     const linkHTML = img.dataset.link 
       ? ` <a href="${img.dataset.link}" target="_blank">${img.dataset.link}</a>` 
       : '';
@@ -19,6 +20,7 @@ images.forEach(img => {
     lightboxCaption.innerHTML = img.alt + linkHTML;
   });
 });
+
 // Fermer en cliquant sur le bouton
 lightboxClose.addEventListener('click', () => {
   lightbox.style.display = 'none';
@@ -31,25 +33,17 @@ lightbox.addEventListener('click', (e) => {
   }
 });
 
-function applyImagePositions() {
+// Appliquer les positions desktop **une seule fois au chargement**
+window.addEventListener('load', () => {
   if (window.innerWidth > 768) {
-    // Desktop : positions absolues selon data-*
     images.forEach(img => {
       img.style.position = 'absolute';
       img.style.top = img.dataset.top;
       img.style.left = img.dataset.left;
       img.style.width = img.dataset.width;
     });
-  } else {
-    // Mobile : styles CSS seuls
-    images.forEach(img => {
-      img.style.position = 'relative';
-      img.style.top = 'auto';
-      img.style.left = 'auto';
-      img.style.width = 'auto';
-    });
   }
-}
+});
 
 // Remettre le curseur normal après avoir quitté une image
 document.querySelectorAll('.img').forEach(img => {
@@ -60,8 +54,6 @@ document.querySelectorAll('.img').forEach(img => {
   img.addEventListener('mouseenter', () => {
     document.body.style.cursor = 'pointer';
   });
-
 });
-
 
 
